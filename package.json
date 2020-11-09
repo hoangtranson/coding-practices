@@ -1,0 +1,27 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "repo for solving leetcode problem",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangtranson/leetcode.git"
+  },
+  "keywords": [
+    "leetcode",
+    "ava",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoangtranson/leetcode/issues"
+  },
+  "homepage": "https://github.com/hoangtranson/leetcode#readme",
+  "dependencies": {
+    "ava": "^3.13.0"
+  }
+}
