@@ -3,19 +3,32 @@ const isValid = require('.');
 
 // https://leetcode.com/problems/valid-parentheses/
 
-const PASSES = ["()","()[]{}", "{[]}"];
-const FAILED = ["(]", "([)]"];
+const DATA = [
+    {
+        input: "()",
+        output: true
+    },
+    {
+        input: "()[]{}",
+        output: true
+    },
+    {
+        input: "{[]}",
+        output: true
+    },
+    {
+        input: "(]",
+        output: false
+    },
+    {
+        input: "([)]",
+        output: false
+    }
+];
 
-PASSES.forEach(value => {
-    test(`${value} should be valid`, t => {
-        const _isValid = isValid(value);
-        t.is(_isValid, true);
+DATA.forEach( item => {
+    test(`${item.input} should return value ${item.output}`, t => {
+        const _isValid = isValid(item.input);
+        t.is(_isValid, item.output);
     })
 });
-
-FAILED.forEach(value => {
-    test(`${value} should not be valid`, t => {
-        const _isValid = isValid(value);
-        t.is(_isValid, false);
-    })
-})
