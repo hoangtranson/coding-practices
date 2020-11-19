@@ -4,7 +4,7 @@
   "description": "repo for solving leetcode problem",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava hard/**"
   },
   "repository": {
     "type": "git",
