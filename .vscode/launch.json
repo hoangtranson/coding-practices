@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\index.js"
+            "program": "${workspaceFolder}\\easy\\breaking-best-and-worst-records\\index.js < test-case-1.txt"
         }
     ]
 }
